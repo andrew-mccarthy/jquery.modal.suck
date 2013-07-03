@@ -31,6 +31,7 @@
     }
 
     function openModal() {
+      Settings.beforeOpen(Self);
       Self.css({
         'display' : 'block',
         'width'   : Settings.width,
@@ -41,6 +42,7 @@
         'top'     : '50%',
         'margin'  : '-' + Math.ceil(Settings.height/2) + 'px 0 0 -' + Math.ceil(Settings.width/2) + 'px'
       });
+      Settings.afterOpen(Self);
     }
 
 
